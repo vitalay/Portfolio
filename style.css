@@ -176,15 +176,16 @@ margin-bottom: 24px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
+
+  padding-top: 140px;
 }
 
 .work {
  position: relative;
   height: 600px;
 }
-.work:nth-child(even) {
-  position: relative;
-  top: 140px;
+.work:nth-child(odd) {
+  margin-top: -140px;
 }
 .work:hover {
   opacity: 1;
