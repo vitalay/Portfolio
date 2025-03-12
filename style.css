@@ -218,4 +218,37 @@ margin-bottom: 24px;
 .work:hover .work__name {
   opacity: 1;
 }
+.projects {
+  margin-top: 240px;
+}
+
+.container {}
+
+.projects_title {
+ margin-top: 0;
+ margin-bottom: 65px;
+
+    font-size: 36px;
+    text-align: center;
+    color: #DEDEDE;
+}
+
+.projects__wrapper {
+  display: flex;
+  justify-content: center;
+ flex-wrap: wrap;
+  gap: 15px
+}
+
+.projects__img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+
+}
+.projects--vertical .projects__img {
+height:  550px;
+}
+
 
