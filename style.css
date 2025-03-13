@@ -279,4 +279,41 @@ font-size: 26px;
 
 }
 
+.footer {
+  padding: 40px 0;
+
+  border-top: 1px solid #696969;
+}
+
+.footer .container {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+
+}
+
+.footer__copy {
+font-style: 16px;
+}
+.footer__copy span {
+color: #ECECEC;
+}
+
+
+
+.socials {
+display: flex;
+
+
+gap: 40px;
+}
+
+.socials__link {
+
+}
+
+.socials__img {
+display: flex;
+}
+
 
