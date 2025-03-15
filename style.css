@@ -74,6 +74,13 @@ img {
   width: 21px;
   height: 21px
 }
+.socials {
+  display: flex;
+  gap: 40px;
+}
+.socials__img {
+  display: flex;
+}
 
 .header {
   padding: 20px 0;
@@ -301,19 +308,5 @@ color: #ECECEC;
 
 
 
-.socials {
-display: flex;
-
-
-gap: 40px;
-}
-
-.socials__link {
-
-}
-
-.socials__img {
-display: flex;
-}
 
 
