@@ -21,6 +21,7 @@ a {
 a:hover {
   opacity: 0.5;
 }
+
 img {
   max-width: 100%;
 }
@@ -41,12 +42,14 @@ img {
   gap: 11px;
 
 }
+
 .title {
   margin-top: 0;
   font-size: 36px;
   text-align: center;
   color: #DEDEDE;
 }
+
 .btn {
   font-size: 18px;
   color: #FFFFFF;
@@ -74,10 +77,12 @@ img {
   width: 21px;
   height: 21px
 }
+
 .socials {
   display: flex;
   gap: 40px;
 }
+
 .socials__img {
   display: flex;
 }
@@ -123,15 +128,8 @@ img {
   align-items: center;
 }
 
-
-.welcome__desc {
- 
-}
-
-
-
 .welcome__title {
-margin-bottom: 24px;
+  margin-bottom: 24px;
   width: 500px;
   font-weight: 700;
   font-size: 54px;
@@ -145,26 +143,21 @@ margin-bottom: 24px;
   margin-bottom: 88px;
 }
 
-.welcome__btn {}
-
-
 .welcome__img {
-   /* margin-right: 106px;  */
+  margin-right: 0px;
   border-radius: 50%;
-
   width: 400px;
   height: 400px;
- object-fit: cover;
- object-position: center;
+  object-fit: cover;
+  object-position: center;
 
 
 }
+
 .works {
   margin-top: 150px;
 
 }
-
-.container {}
 
 .works__btn {
   display: inline-flex;
@@ -183,7 +176,6 @@ margin-bottom: 24px;
   margin-bottom: 80px;
 }
 
-.works__icon {}
 
 .works__wrapper {
   display: grid;
@@ -194,12 +186,14 @@ margin-bottom: 24px;
 }
 
 .work {
- position: relative;
+  position: relative;
   height: 600px;
 }
+
 .work:nth-child(odd) {
   margin-top: -140px;
 }
+
 .work:hover {
   opacity: 1;
 }
@@ -228,24 +222,24 @@ margin-bottom: 24px;
   transition: opacity 0.3s;
 
 }
+
 .work:hover .work__name {
   opacity: 1;
 }
+
 .projects {
   margin-top: 240px;
 }
 
 .projects_title {
+  margin-bottom: 65px;
 
- margin-bottom: 65px;
-
-   
 }
 
 .projects__wrapper {
   display: flex;
   justify-content: center;
- flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 15px
 }
 
@@ -256,57 +250,171 @@ margin-bottom: 24px;
   object-position: center;
 
 }
+
 .projects--vertical .projects__img {
-height:  550px;
+  height: 550px;
 }
 
 .contact {
- margin-top: 200px;
- margin-bottom: 120px;
+  margin-top: 200px;
+  margin-bottom: 120px;
 }
 
 .contact .container {
-max-width: 520px;
-text-align: center;
+  max-width: 520px;
+  text-align: center;
 }
 
 
 .contact_title {
-margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .contact__text {
- margin-bottom: 50px;
-font-size: 26px;
-
-
-}
-
-.btn {
+  margin-bottom: 50px;
+  font-size: 26px;
 
 }
 
 .footer {
   padding: 40px 0;
-
   border-top: 1px solid #696969;
 }
 
 .footer .container {
-display: flex;
-justify-content: space-between;
-align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 
 }
 
 .footer__copy {
-font-style: 16px;
+  font-style: 16px;
+  margin: 0;
 }
+
 .footer__copy span {
-color: #ECECEC;
+  color: #ECECEC;
 }
 
+@media (max-width: 1100px) {
+  .welcome__img {
+    margin-right: 0;
+  }
+}
 
+@media (max-width: 950px) {
 
+  .welcome {
+    margin-top: 70px;
+  }
 
+  .welcome .container {
+    flex-direction: column-reverse;
+    gap: 65px;
+  }
 
+  .welcome__title {
+    width: auto;
+  }
+
+  .welcome__text {
+    width: auto;
+    margin-bottom: 50px;
+  }
+
+  .welcome__desc {
+    text-align: center;
+  }
+
+  .work {
+    height: 600px;
+  }
+  .work__name{
+    opacity: 1;
+  }
+
+}
+
+@media (max-width: 850px) {
+  .projects__img {
+    height: 300px;
+    width: 300px;
+
+  }
+  .work, .projects, .contact {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 770px) {
+  .welcome__title {
+    font-style: 16px;
+  }
+
+}
+@media (max-width: 700px) {
+  .footer .container{
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+
+  }
+  @media (max-width: 650px) {
+    .projects__img{
+      width: 100%;
+      height: 360px;
+    }
+    .works__wrapper{
+      grid-template-columns: 1fr;
+      padding-top: 0;
+    }
+    .work:nth-child(odd){
+      margin-top: 0;
+    }
+    
+    }
+    @media (max-width: 500px) {
+      .header__nav{
+        display: none;
+      }
+      .welcome__img{
+        width: 240px;
+        height: 240px;
+      }
+      .btn {
+        padding: 16px 20px;
+      }
+      .works__btn{
+        margin-bottom: 40px;
+      }
+      .work__name{
+        font-size: 28px;
+      }
+      .title{
+        font-size: 28px;
+      }
+      .projects_title{
+        font-size: 35px;
+      }
+      .contact_title{
+        margin-bottom: 12px;
+      }
+      .contact__text{
+        font-size: 18px;
+      }
+      
+      .contact .container{
+        max-width: 270px;
+      
+    }
+    .contact{
+      margin-top: 100px;
+    }
+    }
+    
+    
+
+  
+  
