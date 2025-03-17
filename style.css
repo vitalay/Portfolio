@@ -21,6 +21,14 @@ a {
 a:hover {
   opacity: 0.5;
 }
+.burger-menu__icon {
+ 
+}
+.burger-menu{
+ display: none;
+}
+
+
 
 img {
   max-width: 100%;
@@ -376,6 +384,13 @@ img {
     
     }
     @media (max-width: 500px) {
+      .burger-menu__icon {
+        
+      }
+      
+        .burger-menu {
+          display: block;
+        }
       .header__nav{
         display: none;
       }
@@ -412,7 +427,9 @@ img {
     .contact{
       margin-top: 100px;
     }
+ 
     }
+    
     
     
 
