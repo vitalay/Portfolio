@@ -384,6 +384,9 @@ img {
     
     }
     @media (max-width: 500px) {
+      .header{
+        position: relative;
+      }
       .burger-menu__icon {
         height: 24px;
         width: 30px;
@@ -391,12 +394,24 @@ img {
         object-position: center;
 
       }
+        .header.header--mobile .header__nav{
+          display: flex;
+
+        }
+        .header--mobile .container{
+          flex-direction: column;
+          gap: 20px;
+        }
       
         .burger-menu {
           display: block;
           background-color: transparent;
           border: none;
           padding: 0;
+
+          position: absolute;
+          top: 29px;
+          right: 15px;
         }
       .header__nav{
         display: none;
