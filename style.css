@@ -385,11 +385,18 @@ img {
     }
     @media (max-width: 500px) {
       .burger-menu__icon {
-        
+        height: 24px;
+        width: 30px;
+        object-fit: contain;
+        object-position: center;
+
       }
       
         .burger-menu {
           display: block;
+          background-color: transparent;
+          border: none;
+          padding: 0;
         }
       .header__nav{
         display: none;
