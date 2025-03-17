@@ -399,6 +399,7 @@ img {
           align-self: center;
           flex-wrap: wrap;
           gap: 20px 30px;
+          justify-content: center;
         }
         .header--mobile .container{
           flex-direction: column;
